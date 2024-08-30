@@ -1,0 +1,163 @@
+/* Global Styles */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Custom Root Variables */
+:root {
+    --header-height: 3.5rem;
+    --body-color: #FFFFFF;
+    --section-color: #F2F2F2;
+    --link-color: #3E4C59;
+    --link-active: #B8D973;
+    --font-color: #8C8C8C;
+    --title-color: #35404E;
+    --banner: rgb(27, 27, 27);
+    --body-font: 'Montserrat', sans-serif;
+
+    /* Font Sizes */
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* Font Weights */
+    --font-light: 100;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-black: 700;
+
+    /* Z-Indexes */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+.background-section {
+    /* background-image: url('a.jpeg'); Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    color: black; /* Ensure text is readable */
+    padding-top: 100px; /* Adjust this value based on the height of your navbar */
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.titles {
+    max-width: 100vw;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0); /* Optional: add a semi-transparent background to the text */
+    /* border-radius: 10px; */
+}
+.mb-5 {
+    margin-bottom: 1rem !important;
+}
+.Title {
+    color: var(--banner);
+    font-weight: 800;
+}
+@media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: 2.5rem;
+    }
+}
+.Subtitle {
+    color: var(--banner);
+    font-weight: var(--font-semi-bold);
+    color: black;
+}
+@media (min-width: 1200px) {
+    .h3, h3 {
+        font-size: 1.75rem;
+    }}
+    .card-body {
+        max-width: 80vw;
+        flex: 1 1 auto;
+        padding: 1rem 0.1rem;
+    }
+.about-section {
+    margin-left: 20px;  /* Adjust the value as needed */
+    margin-right: 20px; /* Adjust the value as needed */
+}
+#about {
+    background-color: var(--section-color);
+    padding: 10% 30% 10% 30%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* Bootstrap Variables */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
+    /* Bootstrap RGB Variables */
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+
+    /* Bootstrap Fonts */
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* Bootstrap Misc */
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+}
+
+/* Media Queries */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
